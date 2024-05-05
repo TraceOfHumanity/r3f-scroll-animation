@@ -1,12 +1,12 @@
 import { Canvas } from '@react-three/fiber';
+
 import { Experience } from 'components/Experience';
 
 function App() {
   return (
     <div className="h-screen">
-      <Canvas>
+      <Canvas camera={{ fov: 64, position: [2.3, 1.5, 2.3] }}>
         {/* <ambientLight /> */}
-        <pointLight position={[10, 10, 10]} intensity={500} />
         <Experience />
       </Canvas>
     </div>
